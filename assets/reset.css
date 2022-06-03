@@ -1,0 +1,59 @@
+/** box sizing rules**/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/** remove default margin **/
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd{
+    margin: 0;
+    padding: 0;
+}
+/** remove list style on ul, ol element with a list role, which suggest default styling will be removed **/
+ul[role='list'],ol[role='list']{
+    list-style: none;
+}
+/** set core root default **/
+html:focus-within{
+    scroll-behavior: smooth;
+}
+/** set core body default **/
+body{
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+/** element that don't have a class get default **/
+a:not([class]){
+    text-decoration-skip-ink: auto;
+}
+/** make image easier to work **/
+img,picture{
+    max-width: 100%;
+    display: block;
+}
+/** inherit fonts for inputs and buttons **/
+input,button,textarea,select{
+    font: inherit;
+}
+/** remove all animations, transitions and smoth scroll for people that prefere not to see them **/
+@media(prefers-reduced-motion:reduce){
+    html:focus-within{
+        scroll-behavior: auto;
+    }
+    *,*::before,*::after{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0,01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
