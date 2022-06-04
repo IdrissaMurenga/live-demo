@@ -1,0 +1,11 @@
+/** start of css **/
+body{
+    font-family: 'PT Sans',sans-serif;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    color: #6733e2;
+    background-color: #ffb92f;
+}
+/**end of css **/
