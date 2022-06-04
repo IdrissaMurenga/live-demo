@@ -8,4 +8,9 @@ body{
     color: #6733e2;
     background-color: #ffb92f;
 }
+.boxes{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap: 2rem;
+}
 /**end of css **/
