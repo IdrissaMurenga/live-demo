@@ -16,6 +16,7 @@ body{
 .box{
     padding: 2rem;
     border-radius: 0.75rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color: #fff;
 }
 h1{
